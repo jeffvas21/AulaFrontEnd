@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gama Academy - Contato</title>
+
+    <link rel="stylesheet" href="../css/estilo.css">
+    <!-- chamada da biblioteca do css-->
+
+</head>
+
+<body>
+
+    <table border="0" width="100%" class="menu">
+        <tr>
+            <td><a href="../html/index.html"><img src="../imagem/logo.PNG"></td>
+            <td align="center">QUEM SOMOS</td>
+            <td align="center">CURSOS ONLINE</td>
+            <td align="center">GAMA EXPERIENCE</td>
+            <td align="center">PARA EMPRESAS</td>
+            <td align="center">CONTATO</td>
+            <td align="center">CONTEÚDO</td>
+        </tr>
+    </table>
+
+    <form id="form_contato" method="POST">
+        <fieldset>
+            <legend><b>Preencha o nosso formulario para fazer o nosso curso</b></legend><br>
+            <label>Nome : </label><input type="text" nome="nome" class="campo_nome" required><br><br>
+            <label>Email: </label><input type="email" email="email" class="campo_email" required><br><br>
+            <label>Senha: </label><input type="password" senha="senha" class="campo_senha" required><br><br>
+            <label>Genero: </label>
+            <input type="radio" name="opcao_genero" value="Feminino" /> <span>Feminino</span>
+            <input type="radio" name="opcao_genero" value="Masculino" /> <span>Masculino</span>
+            <input type="radio" name="opcao_genero" value="Não Informado" /> <span>Não Informado</span> <br><br>
+            <label>Informe a data que deseja cursar </label><input type="date" name="data"><br><br>
+
+            <label>Escolha o curso desejado</label>
+            <select required>
+                <option value=""> </option>
+                <option value="CSS">CSS </option>
+                <option value="JAVA">JAVA </option>
+                <option value="JAVA">HTML </option>
+                <option value="JAVA">CSS </option>
+            </select><br><br>
+
+            <label>Escolha o periodo:</label>
+            <input type="checkbox"  name="opcao_periodo" value="manhã"> <span>Manhã</span>
+            <input type="checkbox"  name="opcao_periodo" value="tarde"> <span>Tarde</span>
+            <input type="checkbox"  name="opcao_periodo" value="noite"> <span>Noite</span><br><br>
+
+            <label>Mensagem</label><br>
+            <textarea cols="40" rows="4" name="mensagem"></textarea><br><br>
+
+            <label>Anexar comprovante de residencia </label><input type="file" name="arquivo"><br><br>
+            <input type="submit" value="enviar">
+        </fieldset>
+
+    </form>
+
+
+</body>
+
+</html>
